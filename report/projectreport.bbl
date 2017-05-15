@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bannard and
+  Callison-Burch}2005]{bannard2005bilingual}
+Colin Bannard and Chris Callison-Burch.
+\newblock 2005.
+\newblock Paraphrasing with bilingual parallel corpora.
+\newblock In {\em Proceedings of the 43rd Annual Meeting on Association for
+  Computational Linguistics}, ACL '05, pages 597--604, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Koehn}2005]{Koehn_europarl}
+Philipp Koehn.
+\newblock 2005.
+\newblock Europarl: A parallel corpus for statistical machine translation.
+\newblock http://www.statmt.org/europarl/.
+
+\end{thebibliography}

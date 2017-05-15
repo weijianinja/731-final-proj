@@ -14,6 +14,7 @@
 \usepackage{latexsym}
 \usepackage{amsmath}
 \usepackage{multirow}
+\usepackage{graphicx}
 \usepackage{url}
 \makeatletter
 \newcommand{\@BIBLABEL}{\@emptybiblabel}
@@ -52,7 +53,11 @@ We present a tool for Arabic paraphrasing that yields good paraphrasing accuracy
 \section{Obtaining Parallel Monolingual Data}
 
 \section{Extracting Paraphases}
-
+In order to extract paraphrases, we first obtained a parallel bilingual corpus using the EUROPARL dataset \cite{Koehn_europarl}. \cite{bannard2005bilingual}
+\begin{figure*}
+\includegraphics[scale=0.5]{arabic_pivot}
+\caption{An example paraphrased sentence produced using the pivot method. }
+\end{figure*}
 \section{Generating Paraphased Sentences}
 \subsection{Phrase Substitution Method}
 \subsection{Neural Seq-to-Seq Method}
@@ -75,7 +80,7 @@ The sequence-to-sequence models required a relatively long time to run which lim
 
 \section*{Acknowledgments}
 
-\bibliography{tacl}
+\bibliography{projectreport}
 \bibliographystyle{acl2012}
 
 \end{document}
