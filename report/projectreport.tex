@@ -65,10 +65,19 @@ Our first approach to Arabic paraphrasing is the pivot method proposed by Bannar
 p(a_2 | a_1) = \sum_{e} p(a_2 | e) p(e | a_1)
 \end{equation}
 
-In order to extract paraphrases, we first obtained a parallel bilingual corpus through English and Arabic versions of the EUROPARL dataset \cite{Koehn_europarl}. We 
+In order to extract paraphrases, we first obtained a parallel bilingual corpus through English and Arabic versions of the EUROPARL dataset \cite{Koehn_europarl}. We pruned the corpus to only contain sentences with less than 80 words and tokenized using the StanfordNLP Arabic Tokenizer. This gave us a final corpus size of 241,902 sentences. 
+
+Additionally, to calculate conditional probabilities for our paraphrase equation, we need alignments. Thus we then ran GIZA++ to obtain these alignments \cite{och03:asc}. The way we extract the paraphrase is summarized in equation 2. 
+
+\begin{equation}
+\hat{a_2} = \text{argmax}_{a_2 \neq a_1} p(a_2 | a_1)
+\end{equation}
+
+An example of this process can be seen in Figure \ref{fig:pivot}
 \begin{figure*}
 \includegraphics[scale=0.5]{arabic_pivot}
 \caption{An example paraphrased sentence produced using the pivot method. }
+\label{fig:pivot}
 \end{figure*}
 \section{Generating Paraphased Sentences}
 	To address the shortage problem for Arabic language data, here we propose a novel method for generating Arabic parallel language sentences using other two languages pairs as resource. The idea is to use paired sentences data from two other languages, translate them into Arabic correspondingly, then use them as the  training data for sequence to sequence machine translation model to train a translator  to generate Arabic to Arabic paraphrases.
@@ -78,6 +87,11 @@ In order to extract paraphrases, we first obtained a parallel bilingual corpus t
 	We use europarl-v7.fr-en data which contains two millions sentence pairs, and then use Google translate API to generate French-Arabic and English-Arabic sentence pairs correspondingly. Then we use them as training data to train a single layer sequence to sequence attentional encoder-decoder model, with embedding size and hidden size set to be 512 while attention size set to be 128. The whole process is demonstrated in the following  \ref{figure1}
 
 \subsection{Phrase Substitution Method}
+\begin{figure}
+\includegraphics[scale=0.4]{phrase_len}
+\caption{Distribution of paraphrase lengths in our paraphrases obtained through pivoting}
+\label{fig:para_length}
+\end{figure}
 \subsection{Neural Seq-to-Seq Method}
 
 \section{An Automatic Evaluation Metric}

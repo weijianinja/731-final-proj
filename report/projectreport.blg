@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: projectreport.aux
 The style file: acl2012.bst
 Database file #1: projectreport.bib
-You've used 2 entries,
+You've used 3 entries,
             2490 wiz_defined-function locations,
-            565 strings with 4885 characters,
-and the built_in function-call counts, 842 in all, are:
-= -- 94
-> -- 20
+            572 strings with 5025 characters,
+and the built_in function-call counts, 1229 in all, are:
+= -- 137
+> -- 33
 < -- 1
-+ -- 6
-- -- 6
-* -- 49
-:= -- 134
-add.period$ -- 9
-call.type$ -- 2
-change.case$ -- 11
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 38
-empty$ -- 70
-format.name$ -- 9
-if$ -- 187
++ -- 11
+- -- 10
+* -- 81
+:= -- 196
+add.period$ -- 13
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 53
+empty$ -- 99
+format.name$ -- 15
+if$ -- 265
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 15
-num.names$ -- 6
-pop$ -- 15
+missing$ -- 2
+newline$ -- 21
+num.names$ -- 9
+pop$ -- 19
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 20
 quote$ -- 0
-skip$ -- 35
+skip$ -- 47
 stack$ -- 0
-substring$ -- 42
-swap$ -- 13
+substring$ -- 67
+swap$ -- 15
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 24
 warning$ -- 0
-while$ -- 7
-width$ -- 4
-write$ -- 32
+while$ -- 11
+width$ -- 5
+write$ -- 46

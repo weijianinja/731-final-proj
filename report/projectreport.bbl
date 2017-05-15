@@ -15,4 +15,10 @@ Philipp Koehn.
 \newblock Europarl: A parallel corpus for statistical machine translation.
 \newblock http://www.statmt.org/europarl/.
 
+\bibitem[\protect\citename{Och and Ney}2003]{och03:asc}
+Franz~Josef Och and Hermann Ney.
+\newblock 2003.
+\newblock A systematic comparison of various statistical alignment models.
+\newblock {\em Computational Linguistics}, 29(1):19--51.
+
 \end{thebibliography}
