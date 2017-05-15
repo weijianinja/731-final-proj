@@ -15,6 +15,8 @@
 \usepackage{amsmath}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{tabularx}
+
 \usepackage{url}
 \makeatletter
 \newcommand{\@BIBLABEL}{\@emptybiblabel}
@@ -22,8 +24,8 @@
 \makeatother
 \usepackage[hidelinks]{hyperref}
 \DeclareMathOperator*{\argmax}{arg\,max}
-\setlength\titlebox{6.5cm}    % Expanding the titlebox
 
+\setlength\titlebox{6.5cm}    % Expanding the titlebox
 \title{Neural and Symbolic Arabic Paraphrasing with Automatic Evaluation}
 
 \author{First Author \\
@@ -58,8 +60,8 @@
 
 \section{Obtaining Parallel Monolingual Data}
 
-\section{Extracting Paraphrases}
-Our first approach to Arabic paraphrasing is the pivot method proposed by Bannard and Callison-Burch\cite{bannard2005bilingual}. A key benefit is that it is language-agnostic and is based on the idea that any two source strings $e_1$ and $e_2$ that both translate to a reference string $f_1$ have similar meaning. Bannard and Callison-Burch used English as the reference string $f$, but in our study we will instead pivot into English to obtain paraphrase pairs. We obtain the final paraphrase probability by marginalizing over the English translation probabilities with $e$ and arabic phrases $a_1$ and $a_2$. A mathematical formulation of the approach can be found in Equation 1.
+\section{Extracting Paraphrases from Bilingual Data}
+Our first approach to Arabic paraphrasing is the pivot method proposed by Bannard and Callison-Burch\cite{bannard2005bilingual}. A key benefit is that it is language-agnostic and is based on the idea that any two source strings $e_1$ and $e_2$ that both translate to a reference string $f_1$ have similar meaning. Bannard and Callison-Burch used English as the reference string $f$, but in our study we will instead pivot into English to obtain paraphrase pairs \cite{bannard2005bilingual}. We obtain the final paraphrase probability by marginalizing over the English translation probabilities with $e$ and arabic phrases $a_1$ and $a_2$. A mathematical formulation of the approach can be found in Equation 1.
 
 \begin{equation}
 p(a_2 | a_1) = \sum_{e} p(a_2 | e) p(e | a_1)
@@ -67,31 +69,41 @@ p(a_2 | a_1) = \sum_{e} p(a_2 | e) p(e | a_1)
 
 In order to extract paraphrases, we first obtained a parallel bilingual corpus through English and Arabic versions of the EUROPARL dataset \cite{Koehn_europarl}. We pruned the corpus to only contain sentences with less than 80 words and tokenized using the StanfordNLP Arabic Tokenizer. This gave us a final corpus size of 241,902 sentences. 
 
-Additionally, to calculate conditional probabilities for our paraphrase equation, we need alignments. Thus we then ran GIZA++ to obtain these alignments \cite{och03:asc}. The way we extract the paraphrase is summarized in equation 2. 
+Additionally, to calculate conditional probabilities for our paraphrase equation, we need alignments. Thus we then ran GIZA++ to obtain these alignments \cite{och03:asc}. Once we have a database of paraphrase mappings, we can then substitute phrases for their corresponding paraphrases by selecting the phrase with the highest probability. This substitution approach was used by Bannard and Callison-Burch in their study as well \cite{bannard2005bilingual} The way we extract the paraphrase is summarized in equation 2. 
 
 \begin{equation}
 \hat{a_2} = \text{argmax}_{a_2 \neq a_1} p(a_2 | a_1)
 \end{equation}
 
 An example of this process can be seen in Figure \ref{fig:pivot}
-\begin{figure*}
-\includegraphics[scale=0.5]{arabic_pivot}
+\begin{figure}
+\includegraphics[scale=0.25]{arabic_pivot}
 \caption{An example paraphrased sentence produced using the pivot method. }
 \label{fig:pivot}
-\end{figure*}
+\end{figure}
 \section{Generating Paraphased Sentences}
 	To address the shortage problem for Arabic language data, here we propose a novel method for generating Arabic parallel language sentences using other two languages pairs as resource. The idea is to use paired sentences data from two other languages, translate them into Arabic correspondingly, then use them as the  training data for sequence to sequence machine translation model to train a translator  to generate Arabic to Arabic paraphrases.
   
 	The first advantage of this approach is its scalability. After preparing enough training data for the paraphraser model, the generation step for Arabic paraphrases is easily scalable. The second advantage is that paraphraser model may contain valuable insight for  building Arabic paraphrases database at  words and phrases level, since state of the art neural machine translation techniques are capable of capturing word and phrase level similarity by projecting word embeddings into vector space.
-	
-	We use europarl-v7.fr-en data which contains two millions sentence pairs, and then use Google translate API to generate French-Arabic and English-Arabic sentence pairs correspondingly. Then we use them as training data to train a single layer sequence to sequence attentional encoder-decoder model, with embedding size and hidden size set to be 512 while attention size set to be 128. The whole process is demonstrated in the following  \ref{figure1}
+\begin{figure}
+\includegraphics[scale=1.0]{monolingual}
+\caption{Overview of the process completed to obtain two parallel Arabic corpora generated from different source languages}
+\label{fig:mono}
+\end{figure}
 
+	We use europarl-v7.fr-en data which contains two millions sentence pairs, and then use Google translate API to generate French-Arabic and English-Arabic sentence pairs correspondingly. Then we use them as training data to train a single layer sequence to sequence attentional encoder-decoder model, with embedding size and hidden size set to be 512 while attention size set to be 128. The whole process is demonstrated in Figure  \ref{fig:mono}
+
+
+\section{Results}
+We report results on the bilingual pivot and sequence to sequence approach detailing above. 
 \subsection{Phrase Substitution Method}
+For the pivot method we report a few results. First	
 \begin{figure}
 \includegraphics[scale=0.4]{phrase_len}
-\caption{Distribution of paraphrase lengths in our paraphrases obtained through pivoting}
+\caption{Distribution of phrase lengths in our paraphrases obtained through pivoting}
 \label{fig:para_length}
 \end{figure}
+
 \subsection{Neural Seq-to-Seq Method}
 
 \section{An Automatic Evaluation Metric}
