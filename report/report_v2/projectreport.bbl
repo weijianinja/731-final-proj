@@ -1,0 +1,179 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Agirre \bgroup et al.\egroup }2009]{sim3}
+Eneko Agirre, Enrique Alfonseca, Keith Hall, Jana Kravalova, Marius Pa\c{s}ca,
+  and Aitor Soroa.
+\newblock 2009.
+\newblock A study on similarity and relatedness using distributional and
+  wordnet-based approaches.
+\newblock In {\em Proceedings of Human Language Technologies: The 2009 Annual
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics}, NAACL '09, pages 19--27, Stroudsburg, PA, USA. Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Bannard and
+  Callison-Burch}2005]{bannard2005bilingual}
+Colin Bannard and Chris Callison-Burch.
+\newblock 2005.
+\newblock Paraphrasing with bilingual parallel corpora.
+\newblock In {\em Proceedings of the 43rd Annual Meeting on Association for
+  Computational Linguistics}, ACL '05, pages 597--604, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Bojanowski \bgroup et al.\egroup
+  }2016]{bojanowski2016enriching}
+Piotr Bojanowski, Edouard Grave, Armand Joulin, and Tomas Mikolov.
+\newblock 2016.
+\newblock Enriching word vectors with subword information.
+\newblock {\em arXiv preprint arXiv:1607.04606}.
+
+\bibitem[\protect\citename{Bouamor \bgroup et al.\egroup }2010]{Bouamor2010}
+Houda Bouamor, Aur{\'e}lien Max, and Anne Vilnat, 2010.
+\newblock {\em Comparison of Paraphrase Acquisition Techniques on Sentential
+  Paraphrases}, pages 67--78.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[\protect\citename{Callison-Burch \bgroup et al.\egroup }2006]{app3}
+Chris Callison-Burch, Philipp Koehn, and Miles Osborne.
+\newblock 2006.
+\newblock Improved statistical machine translation using paraphrases.
+\newblock In {\em Proceedings of the Main Conference on Human Language
+  Technology Conference of the North American Chapter of the Association of
+  Computational Linguistics}, HLT-NAACL '06, pages 17--24, Stroudsburg, PA,
+  USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Corley and Mihalcea}2005]{sim2}
+Courtney Corley and Rada Mihalcea.
+\newblock 2005.
+\newblock Measuring the semantic similarity of texts.
+\newblock In {\em Proceedings of the ACL Workshop on Empirical Modeling of
+  Semantic Equivalence and Entailment}, EMSEE '05, pages 13--18, Stroudsburg,
+  PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Denkowski \bgroup et al.\egroup }2010]{turker}
+Michael Denkowski, Hassan Al-Haj, and Alon Lavie.
+\newblock 2010.
+\newblock Turker-assisted paraphrasing for english-arabic machine translation.
+\newblock https://www.cs.cmu.edu/~mdenkows/pdf/paraphrase-mturk-2010.pdf.
+
+\bibitem[\protect\citename{Dept and Wallis}1993]{app6}
+Peter~Wallis Dept and Peter Wallis.
+\newblock 1993.
+\newblock Information retrieval based on paraphrase.
+\newblock In {\em In Proceedings of PACLING Conference}.
+
+\bibitem[\protect\citename{Duh \bgroup et al.\egroup
+  }2012]{Duh:2012:LTM:2390524.2390526}
+Kevin Duh, Katsuhito Sudoh, Xianchao Wu, Hajime Tsukada, and Masaaki Nagata.
+\newblock 2012.
+\newblock Learning to translate with multiple objectives.
+\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
+  Computational Linguistics: Long Papers - Volume 1}, ACL '12, pages 1--10,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Ferreira \bgroup et al.\egroup }2014]{sim1}
+Rafael Ferreira, Rafael~Dueire Lins, Fred Freitas, Steven~J. Simske, and
+  Marcelo Riss.
+\newblock 2014.
+\newblock A new sentence similarity assessment measure based on a three-layer
+  sentence representation.
+\newblock In {\em Proceedings of the 2014 ACM Symposium on Document
+  Engineering}, DocEng '14, pages 25--34, New York, NY, USA. ACM.
+
+\bibitem[\protect\citename{Graff and Walker}2001]{data3}
+David Graff and Kevin Walker.
+\newblock 2001.
+\newblock Arabic newswire part 1.
+\newblock \url{https://catalog.ldc.upenn.edu/LDC2001T55}.
+
+\bibitem[\protect\citename{Koehn \bgroup et al.\egroup }2003]{app1}
+Philipp Koehn, Franz~Josef Och, and Daniel Marcu.
+\newblock 2003.
+\newblock Statistical phrase-based translation.
+\newblock In {\em Proceedings of the 2003 Conference of the North American
+  Chapter of the Association for Computational Linguistics on Human Language
+  Technology - Volume 1}, NAACL '03, pages 48--54, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Koehn}2005]{Koehn_europarl}
+Philipp Koehn.
+\newblock 2005.
+\newblock Europarl: A parallel corpus for statistical machine translation.
+\newblock http://www.statmt.org/europarl/.
+
+\bibitem[\protect\citename{Manning \bgroup et al.\egroup }2014]{manning}
+Christopher~D. Manning, Mihai Surdeanu, John Bauer, Jenny Finkel, Steven~J.
+  Bethard, and David McClosky.
+\newblock 2014.
+\newblock The {Stanford} {CoreNLP} natural language processing toolkit.
+\newblock In {\em Association for Computational Linguistics (ACL) System
+  Demonstrations}, pages 55--60.
+
+\bibitem[\protect\citename{Mi \bgroup et al.\egroup
+  }2016]{DBLP:journals/corr/MiSWI16}
+Haitao Mi, Baskaran Sankaran, Zhiguo Wang, and Abe Ittycheriah.
+\newblock 2016.
+\newblock A coverage embedding model for neural machine translation.
+\newblock {\em CoRR}, abs/1605.03148.
+
+\bibitem[\protect\citename{Och and Ney}2003]{och03:asc}
+Franz~Josef Och and Hermann Ney.
+\newblock 2003.
+\newblock A systematic comparison of various statistical alignment models.
+\newblock {\em Computational Linguistics}, 29(1):19--51.
+
+\bibitem[\protect\citename{Pavlick and Callison{-}Burch}2016]{parasimple}
+Ellie Pavlick and Chris Callison{-}Burch.
+\newblock 2016.
+\newblock Simple {PPDB:} {A} paraphrase database for simplification.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics, {ACL} 2016, August 7-12, 2016, Berlin, Germany,
+  Volume 2: Short Papers}. The Association for Computer Linguistics.
+
+\bibitem[\protect\citename{Rinaldi \bgroup et al.\egroup }2003]{app5}
+Fabio Rinaldi, James Dowdall, Kaarel Kaljurand, Michael Hess, and Diego
+  Moll\'{a}.
+\newblock 2003.
+\newblock Exploiting paraphrases in a question answering system.
+\newblock In {\em Proceedings of the Second International Workshop on
+  Paraphrasing - Volume 16}, PARAPHRASE '03, pages 25--32, Stroudsburg, PA,
+  USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Salloum and
+  Habash}2011]{Salloum:2011:DSA:2140533.2140535}
+Wael Salloum and Nizar Habash.
+\newblock 2011.
+\newblock Dialectal to standard arabic paraphrasing to improve arabic-english
+  statistical machine translation.
+\newblock In {\em Proceedings of the First Workshop on Algorithms and Resources
+  for Modelling of Dialects and Language Varieties}, DIALECTS '11, pages
+  10--21, Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Wieting \bgroup et al.\egroup }2015]{sim4}
+John Wieting, Mohit Bansal, Kevin Gimpel, and Karen Livescu.
+\newblock 2015.
+\newblock Towards universal paraphrastic sentence embeddings.
+\newblock {\em CoRR}, abs/1511.08198.
+
+\bibitem[\protect\citename{Xiaoyi \bgroup et al.\egroup }2004]{data1}
+Ma~Xiaoyi, Dalal Zakhary, and Moussa Bamba.
+\newblock 2004.
+\newblock Arabic news translation text part 1 ldc2004t17.
+\newblock \url{https://catalog.ldc.upenn.edu/LDC2004T17}.
+
+\bibitem[\protect\citename{Zhou \bgroup et al.\egroup }2006]{app2}
+Liang Zhou, Chin-Yew Lin, Dragos~Stefan Munteanu, and Eduard Hovy.
+\newblock 2006.
+\newblock Paraeval: Using paraphrases to evaluate summaries automatically.
+\newblock In {\em Proceedings of the Main Conference on Human Language
+  Technology Conference of the North American Chapter of the Association of
+  Computational Linguistics}, HLT-NAACL '06, pages 447--454, Stroudsburg, PA,
+  USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Zukerman \bgroup et al.\egroup }2002]{app4}
+Ingrid Zukerman, Bhavani Raskutti, and Yingying Wen, 2002.
+\newblock {\em Experiments in Query Paraphrasing for Information Retrieval},
+  pages 24--35.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\end{thebibliography}
